@@ -1,0 +1,14 @@
+🚗 Smart Parking Space Allocation
+Available Parking Slots
+🟢 Available    🔴 Occupied
+
+Parking Area
+{% for slot in ["A1","A2","A3","A4","B1","B2","B3","B4","C1","C2","C3","C4"] %} {% if slot in occupied %} 🔴 {{ slot }} {% else %} 🟢 {{ slot }} {% endif %}   {% if slot == "A4" or slot == "B4" %}
+
+{% endif %} {% endfor %}
+
+Vehicle Number: 
+ Find Parking Slot
+{% if result %}
+{{ result }}
+{% endif %}
